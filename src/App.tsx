@@ -1,12 +1,15 @@
 import UserInfo from "./components/UserInfo.tsx";
 import AdminInfo from "./components/AdminInfo.tsx";
+import {AdminInfoList, Info} from "./types.ts";
 const App = () => {
-    const user = {
+    const user : Info = {
         id:1,
         name:'Joe',
         email:'joe@gmail.com',
     };
-    const admin = {
+    const admin : AdminInfoList = {
+        // we have to indicate the
+        // types importing from types
         id:1,
         name:'Jenna',
         email:'jenna@gmail.com',
@@ -15,7 +18,7 @@ const App = () => {
     };
     return (
         <div>
-            <UserInfo user={user}  />
+            <UserInfo user={user}/>
             <AdminInfo admin={admin}/>
         </div>
     )
