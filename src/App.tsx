@@ -1,8 +1,11 @@
-import Person from "./components/Person.tsx";
+import User from "./components/User.tsx";
+
 const App = () => {
     return (
         <div>
-            <Person name={'Mila'} age={4}/>
+            <User>
+                <p>Hello world</p>
+            </User>
         </div>
     )
 }
