@@ -1,6 +1,8 @@
 import {ReactNode} from "react";
-
-const User = ({children}:ReactNode) => {
+type children = {
+    children: ReactNode;
+}
+const User = ({children}: children) => {
     return (
         <div>
             {children}
