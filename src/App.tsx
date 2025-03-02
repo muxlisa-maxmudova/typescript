@@ -1,9 +1,9 @@
-import Counter from "./State_hook/Counter.tsx";
-const App = () => {
+import Objects from "./State_hook/Objects.tsx";
 
+const App = () => {
     return (
         <div>
-            <Counter/>
+            <Objects/>
         </div>
     )
 }
