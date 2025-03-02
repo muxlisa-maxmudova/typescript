@@ -1,15 +1,15 @@
 import {useState} from "react";
 const Objects = () => {
-    const [friends, setFriends] = useState<(string|number)[]>(['Jenna', 'Jessica', 2])
-    const add : () => void = () =>{
-        setFriends([...friends, 'Anna'])
+    const [friends, setFriends] = useState<{name:string}>({name: 'Mukhlisa'})
+    const[toggle, setToggle] = useState<boolean>(false)
+    const change = () => {
+        setToggle(!toggle)
+        setFriends( toggle ? {...friends, name: 'Kaya'}: {...friends, name:'Mukhlisa'})
     }
     return (
         <div>
-            {friends.map((friend:string|number)=>(
-                <li>{friend}</li>
-            ))}
-            <button onClick={add}>add</button>
+            {friends.name}
+            <button onClick={change}>change</button>
         </div>
     )
 }
