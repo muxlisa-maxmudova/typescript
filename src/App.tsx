@@ -1,9 +1,8 @@
-import Objects from "./State_hook/Objects.tsx";
-
+import UserProfile from "./State_hook/UserProfile.tsx";
 const App = () => {
     return (
         <div>
-            <Objects/>
+            <UserProfile/>
         </div>
     )
 }
