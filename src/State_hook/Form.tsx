@@ -15,15 +15,16 @@ const Form = () => {
     const password = useRef<HTMLInputElement>(null)
     const handleClick = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+        const nameValue = name.current!.value
+        const emailValue = email.current!.value
+        const passwordValue = password.current!.value
+        setSubmittedData({
+            name:nameValue,
+            email:emailValue,
+            password:passwordValue,
+        })
     }
-    const nameValue = name.current!.value
-    const emailValue = email.current!.value
-    const passwordValue = password.current!.value
-    setSubmittedData({
-        name:nameValue,
-        email:emailValue,
-        password:passwordValue,
-    })
+
 
 
     return (
@@ -31,7 +32,7 @@ const Form = () => {
             <input type={'text'} placeholder='Enter Your Name...' ref={name}/>
             <input type={'email'} placeholder='Enter Your Email...' ref={email}/>
             <input type={'password'} placeholder='Enter Your password...' ref={password}/>
-            <button type='submit'>SUBMIT</button>
+            <button type='submit' >SUBMIT</button>
             <section>
                 <h1>Name: {submittedData.name}</h1>
                 <h1>Email: {submittedData.email}</h1>
