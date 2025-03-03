@@ -1,8 +1,9 @@
-import Form from "./State_hook/Form.tsx";
+import Todo from "./State_hook/Todo.tsx";
+
 const App = () => {
     return (
         <div>
-            <Form/>
+            <Todo/>
         </div>
     )
 }
