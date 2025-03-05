@@ -1,9 +1,8 @@
-import Rock from "./components/Games/Rock.tsx";
-
+import LanguageContext from "./Context/LanguageContext.tsx";
 const App = () => {
     return (
         <div>
-            <Rock/>
+         <LanguageContext/>
         </div>
     )
 }
