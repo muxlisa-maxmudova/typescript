@@ -35,11 +35,11 @@ const Todo = () => {
                 onChange={(e)=>{setDate(e.target.value)}}/>
                 <button type={'submit'}>add</button>
             </form>
-            {todo.map((todo)=>(
+            {todo.map((todo, index)=>(
                 <ol key={Math.random()}>
-                    <div>
-                        {todo.name}  {todo.date}
-                        <button style={{ display: todo.name==='' && todo.date==='' && todo.id===0? 'none': 'inline', marginLeft:'5px'}} onClick={() => deleteTodo(todo.id)}>Delete</button>
+                    <div style={{ display: todo.name==='' && todo.date==='' && todo.id===0? 'none': 'inline'}}>
+                        {index}){todo.name}  {todo.date}
+                        <button style={{marginLeft:'5px'}}  onClick={() => deleteTodo(todo.id)}>Delete</button>
                     </div>
                 </ol>
             ))}

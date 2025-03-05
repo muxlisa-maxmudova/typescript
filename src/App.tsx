@@ -1,9 +1,9 @@
-import Todo from "./State_hook/Todo.tsx";
+import Rock from "./components/Games/Rock.tsx";
 
 const App = () => {
     return (
         <div>
-            <Todo/>
+            <Rock/>
         </div>
     )
 }
