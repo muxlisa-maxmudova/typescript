@@ -1,8 +1,9 @@
-import Password from "./ConditionalRendering/Password.tsx";
+import Weather from "./ConditionalRendering/Weather.tsx";
+
 const App = () => {
     return (
         <div>
-            <Password isValid={false}/>
+            <Weather temperature={23}/>
         </div>
     )
 }
