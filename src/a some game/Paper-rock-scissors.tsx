@@ -1,20 +1,9 @@
 import {useState} from "react";
-
+import {choice, computerChoice} from "./CustomHooks.ts";
 
 const PaperRockScissors = () => {
      const [you, setYou] = useState<number>(0)
      const [computer, setComputer] = useState<number>(0)
-    let computerChoice=''
-    const choice = (random:number) => {
-        if(random>0 && random<0.3) {
-            computerChoice = 'paper'
-        } else if (random > 0.3 && random<0.6){
-            computerChoice = 'rock'
-        }else{
-            computerChoice = 'scissors'
-        }
-
-    }
     const comparison = (userChoice:string) => {
         choice(Math.random())
         if (userChoice === 'paper') {

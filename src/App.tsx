@@ -1,4 +1,4 @@
-import PaperRockScissors from "./Paper-rock-scissors.tsx";
+import PaperRockScissors from "./a some game/Paper-rock-scissors.tsx";
 
 const App = () => {
     return (
