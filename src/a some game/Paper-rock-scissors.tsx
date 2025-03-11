@@ -1,5 +1,5 @@
 import {useState} from "react";
-import {choice, computerChoice} from "./CustomHooks.ts";
+import {choice, computerChoice} from "./ComputerChoice.ts";
 
 const PaperRockScissors = () => {
      const [you, setYou] = useState<number>(0)
